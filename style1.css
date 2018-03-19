@@ -1,33 +1,74 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Supermercado+One');
 
 /* Use the 'Lato' font family at 18px throughout the body of the document, and cover the background with the 'map-bg.jpg' image. */
+
+header { font-family: 'Supermercado One';
+    src: local('Supermercado One Regular'), local('SupermercadoOne-Regular'), url(https://fonts.gstatic.com/s/supermercadoone/v7/OpNXnpQWg8jc_xps_Gi14kVVEXOn20H9MQtCVTo.woff2) format('woff2');
+    color: #5d4037
+}    
 #main {
-    font: 'Supermercado One'; font size: 45px; color: #5d4037
+    font: 'Lato'; font size: 18px; color: #5d4037
 }
-nav {font-family: Lato; font-size: 18px;}
+
+nav {
+    font-family: Lato; font-size: 18px;
+}
+
 body {
-    font-family: Lato;}
-body{background: url(map-bg.jpg);
-#main {width: 900px; margin: 10px auto;}
+    font-family: Lato;
+}
+
+body{
+    background: url(map-bg.jpg);
+}
+
+#main {
+    width: 900px; margin: 10px auto;
 /* Use the 'Supermercado One' font at 45px (colored #5d4037) for the restaurant name. */
-colomn-rule: dotted 2px;
+    colomn-rule: dotted 2px;
+}
+
 /* Set the separator between the columns (the "column-rule") to be 2px dashed rosybrown. */
-#menu {columns: 400px 2; column-gap: 100px;}
+#menu {column-width: 350px; 
+    column-rule: dashed rosybrown;  
+    color: black;  
+    column-gap: 100px;
+    /* @font-face { */
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+
+}
 section {margin-bottom: 50px;}
 
 /* Show each of the section headings of the menu (e.g. "Starters") in small caps, colored #6d4c41. */
-h1 {margin: 0; text-transform: capitalize; color: #6d4c41}
+/* h1 {margin: 0; text-transform: capitalize; color: #6d4c41
+
+} */
+
+h2 { font-family: 'Lato';
+    color:#6d4c41;
+    text-transform: uppercase; 
+
+}
 
 /* Make the name of each menu item appear in bold in a 20px size. */
-body {text: strong;}
+body {font-weight: bold; 
+    font-size: 20px;
+
+}
 
 
-dd {margin: 0 0 12px 0; display: flex;}
+dd {margin: 0 0 12px 0; 
+    display: flex;}
 
-.details {font-size; 20px}
+.details {font-size: 15px;
+}
 
 /* Show the price of each item in a large font, in the color named 'firebrick' */
 .price {order: 2; padding-left: 10px; color: firebrick;}
 
 /* Draw a 2px dashed rosybrown border around the address/footer */
-address {padding: 10px;}
+footer {
+    border: 2px dotted; border-color: rosybrown; 
+    padding: 10px;}
